@@ -32,7 +32,7 @@ const getAllCountries = async () => {
     // Guardo en caché todos los paises con las nuevas actividades
     const countriesWithActivities = await Country.findAll({ include: Activity });
     cache.allCountries = countriesWithActivities;
-    cache.allCountries = true;// ojo<================
+    // cache.allCountries = true;// ojo<================
 }
 
 
