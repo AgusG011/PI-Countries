@@ -1,0 +1,36 @@
+.landing{
+    font-family: 'Century Gothic', sans-serif;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    border: solid 10px #121212;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-left: 5px;
+    transition: all 0.5s;
+
+}
+.btn{
+    font-family: 'Century Gothic', sans-serif;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    border: solid 10px #121212;
+    color: #fff;
+    text-align: center;
+    font-size: 300%;
+    padding: 20px;
+    margin-left: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    left: 37%;
+    margin-bottom: 20px;
+    position: absolute;
+    margin-left: 35rem;
+    margin-top: 500px;
+    box-shadow: 30px 40px 15px 0px black;
+
+}
+.imagen {
+    height: 100vh;
+    border: solid 5px #121212;
+  }
