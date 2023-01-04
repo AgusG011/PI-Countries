@@ -51,6 +51,7 @@ const getCountries = async (req, res) => {
     res.status(404).send('No existe ese Pais');
 };
 
+
     const getCountryById = async (req, res) => {
         const { id } = req.params;
         let allCountries = await Country.findAll({include: {
