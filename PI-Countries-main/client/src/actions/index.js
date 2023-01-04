@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export  function getcountry (){        //se realiza conexion entre back y frond
+export function getcountry (){        //se realiza conexion entre back y frond
 
    return async function(dispatch){
 
