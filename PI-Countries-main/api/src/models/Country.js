@@ -29,10 +29,13 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING
     },
     area: {
-      type: DataTypes.INTEGER
+      type: DataTypes.DECIMAL(12,2)
     },
     population: {
-      type: DataTypes.INTEGER
+      type: DataTypes.DECIMAL(12,2)
+    },
+    validate:{
+      type: DataTypes.BOOLEAN
     }
   });
 };

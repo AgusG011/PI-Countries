@@ -14,7 +14,7 @@ module.exports = (sequelize) => {
             allowNull: false,
             unique: true
         },
-        difficulty: {
+        dificulty: {
             type: DataTypes.INTEGER,
             allowNull: false,
             validate: { 

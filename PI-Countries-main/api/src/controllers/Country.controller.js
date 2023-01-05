@@ -3,6 +3,7 @@ const axios = require('axios');
 
 const getCountries = async (req, res) => {
     const { name } = req.query;
+    
     if(!name) {
         let BD = await Country.findAll({
             attributes: ["id", "name", "flag", "continent", "population"],
@@ -14,9 +15,11 @@ const getCountries = async (req, res) => {
                 }
             }
         })
+       
         if(BD.length > 0) {
             return res.status(200).send(BD);
         } else {
+        
             const allCountries = await axios.get("https://restcountries.com/v3/all");
             const pais = allCountries.data.map((p) => {
                 return {
@@ -28,9 +31,14 @@ const getCountries = async (req, res) => {
                     subregion: p.subregion,
                     area: p.area,
                     population: p.population,
+                    validate: true
                 };
             });
-            await Country.bulkCreate(pais, {validate: true})
+            for(var i = 0; i <pais.length; i++){
+                await Country.create(pais[i])
+            }
+
+         
             let BD = await Country.findAll({
                 attributes: ["id", "name", "flag", "continent", "population"],
                 include:{
