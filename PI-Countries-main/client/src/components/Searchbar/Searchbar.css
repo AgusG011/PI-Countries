@@ -1,0 +1,11 @@
+.search-input {
+    width: 15%;
+    border-radius: 7px;
+    border: solid #454545d1 1.5px;
+}
+
+.buttons-home{
+    background-color: #454545d1;
+    color: azure;
+    cursor: pointer;
+}
