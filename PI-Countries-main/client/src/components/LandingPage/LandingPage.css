@@ -1,14 +1,14 @@
 .landing{
     font-family: 'Century Gothic', sans-serif;
     border-radius: 4px;
-    background-color: #1a1a1a;
+    background-image: url('https://images.freejpg.com.ar/900/1804/vintage-world-map-compass-map-world-atlas-navigation-F100022516.jpg');
     border: solid 10px #121212;
     color: #fff;
     text-align: center;
     padding: 20px;
-    margin-left: 5px;
-    transition: all 0.5s;
-
+    margin-left:5px;
+    transition: all 0.5s; 
+   
 }
 .btn{
     font-family: 'Century Gothic', sans-serif;
@@ -28,9 +28,10 @@
     margin-left: 35rem;
     margin-top: 500px;
     box-shadow: 30px 40px 15px 0px black;
-
+    
 }
 .imagen {
-    height: 100vh;
+    width: 1200px;
+    height: 625px;
     border: solid 5px #121212;
   }
