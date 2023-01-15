@@ -27,7 +27,7 @@ export default function Searchbar(){
             type="text" 
             placeholder="Buscar Pais"
             />
-            <button className="buttons-home" type="submit" onClick={e=>handleSubmit(e)}>Buscar</button>
+            <button className="btn-home" type="submit" onClick={e=>handleSubmit(e)}>Buscar</button>
         </div>
     )
 }

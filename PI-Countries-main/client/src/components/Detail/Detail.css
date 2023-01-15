@@ -1,0 +1,38 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 140px;
+    justify-items: center;
+    align-items: center;
+}
+.img{
+    width: 100%;
+    padding-left: 10px;
+}
+.card-detail{
+    width: 300px;
+    height: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    background-color: #cfa48f81;
+    border-radius: 5%;
+    border: 2.5px black solid;
+}
+/* .container-activities-cards{
+    width: 300px;
+    height: 400px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5%;
+    border: solid black 2.5px;
+    background-color: #cfa48f81;
+}
+.card-activities{
+    display: grid;
+    height: 100px;
+    flex-direction: column;
+    padding-left: 0px;
+} */
+
+
+

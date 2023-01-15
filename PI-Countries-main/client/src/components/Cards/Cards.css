@@ -4,6 +4,7 @@
     margin: 100px;
     background-color: transparent;
     float: left;
+    
   }
    .img {
     object-fit: contain;
@@ -19,7 +20,11 @@
     border: solid 1px #121212;
     box-shadow: 30px 40px 15px 0px #121212;
     text-align: center;
-  
+    
+  }
+  .link {
+    text-decoration: none;
+    color: aliceblue;
   }
   
   /* .cards .flip-card .flip-card-inner {

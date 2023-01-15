@@ -4,8 +4,8 @@
     border: solid #454545d1 1.5px;
 }
 
-.buttons-home{
-    background-color: #454545d1;
-    color: azure;
+.btn-home{
+    background-color: black;
+    color: white;
     cursor: pointer;
 }

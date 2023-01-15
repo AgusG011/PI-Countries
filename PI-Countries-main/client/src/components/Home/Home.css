@@ -1,0 +1,18 @@
+.titulo{
+    background-color: burlywood;
+    margin-top: 0px;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    
+}
+.buttons-home{
+    color: white;
+    background-color: black;
+    
+}
+.link{
+ color: yellowgreen;
+
+}

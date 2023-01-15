@@ -10,11 +10,8 @@ import '../Cards/Cards.css';
                 <div>
                     <img className="img" src={flag} alt="No se encontro la bandera"/>
                 </div>
-                <Link to={'/home' + id}>
-                    <div>
-                        <h3 className="link">{name}</h3>
-                    </div>
-                </Link>
+                
+                <Link to={'/home' + id} className= "link">{name}</Link>
                 
                 <div className="continent">
                     <h3>{continent}</h3>

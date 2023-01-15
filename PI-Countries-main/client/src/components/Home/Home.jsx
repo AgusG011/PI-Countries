@@ -68,7 +68,7 @@ export default function Home(){
     //visual
     return (
         <div>
-            <h1 className="titulo">Paises</h1>
+            <h1 className="titulo">Countrie App</h1>
             <Link to= '/activities'>
                 <button  className="buttons-home">Crear Actividad</button> 
             </Link>
@@ -76,8 +76,8 @@ export default function Home(){
                 <Searchbar/> 
                 <select onChange={e => handleSortName(e)} defaultValue={"default"} id='borrar'>
                     <option value="default" disabled>Ordenado Alfabetico</option>
-                    <option value="asc"> A-Z</option>
-                    <option value="des"> Z-A</option>
+                    <option value="asc"> A-Z </option>
+                    <option value="des"> Z-A </option>
                 </select>
                 <select defaultValue={"default"} onChange={e => handleSortPopulation(e)} id='borrar1'>
                     <option value="default" disabled>Ordenado por poblacion</option>
@@ -106,11 +106,11 @@ export default function Home(){
                 
                 <Paginado CountriesPerPage = {CountriesPerPage} allCountries = {allCountries.length} paginado = {paginado} />
 
-                <div className="display-cards">
+                <div>
                     {CurrentCountries?.map((el)=> {
                         return (
-                            <Link className="link" to={"/home/" + el.id}>
-                                <div className="country-cards">
+                            <Link className="link" to={`/info/${el.id}`}>
+                                <div>
                                     <Cards 
                                     name={el.name}
                                     flag={el.flag}
