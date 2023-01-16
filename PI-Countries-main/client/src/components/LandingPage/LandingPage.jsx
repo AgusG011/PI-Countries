@@ -1,14 +1,20 @@
 import React from "react";
 import {Link} from 'react-router-dom';
 import '../LandingPage/LandingPage.css';
+import image from '../../assets/img/uwu.svg';
 
 export default function LandingPage(){
     return(
         <div className='landing'>
-          
-            <h1 > Bien venido! </h1> 
-            <img src={'https://i.pinimg.com/originals/1b/61/c5/1b61c518124ddc4ef9da739c6b5cc1bd.png'} alt="" className='imagen' />
-            <Link to ='/home'><button className='btn'> Ver mas </button></Link>
+            <div className="navs" >
+                <h1 className="titul"> Countrie App </h1> 
+                <img src={image} alt="logo" className="image" />
+            </div>
             
+            <h2 className="subtitulo">Descubre todos los países del mundo y las actividades en las que puedes aventurarte</h2>
+            <h4 className="descripcion">Countrie App es una aplicación destinada a mostrarte información de diferentes partes del mundo</h4>
+            <Link to ='/home'><button className='btn'> Ver mas </button></Link>
+       
         </div>
+
     )}

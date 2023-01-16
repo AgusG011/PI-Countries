@@ -1,5 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Lora", serif; */
+  /* outline: solid red 1px; */
+}
 .App {
   text-align: center;
+
 }
 
 .App-logo {

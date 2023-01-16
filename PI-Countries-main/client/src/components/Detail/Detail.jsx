@@ -35,7 +35,7 @@ export default function Detail(props){
                     <div className="card-detail">
                         
                         <h1>Nombre: {data[0].name.common}</h1>
-                        <h2>Id: {data[0].id}</h2>
+                        <h2>Id: {data[0].cca3}</h2>
                         <h2>Capital: {data[0].capital}</h2>
                         <h2>Continente: {data[0].subregion}</h2>
                         <h2>Area: {data[0].area} km²</h2>

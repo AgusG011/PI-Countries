@@ -1,14 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Raleway:wght@500&display=swap');
+
+
+
 .landing{
-    font-family: 'Century Gothic', sans-serif;
-    border-radius: 4px;
-    background-image: url('https://images.freejpg.com.ar/900/1804/vintage-world-map-compass-map-world-atlas-navigation-F100022516.jpg');
-    border: solid 10px #121212;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-left:5px;
-    transition: all 0.5s; 
-   
+   background-image: url('https://www.lugaresturisticosdeargentina.com/wp-content/uploads/2018/05/AGENCIAS-DE-TURISMO.jpg');
+   height: 100vh;
+   object-fit: contain;
+}
+.navs{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px;
+}
+.titul{
+    
+    margin-top: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+.image{
+    margin-left: 10px;
+    height: 40px;
+    width: 30px;
+    
+}
+.subtitulo{
+    margin-top: 20px;
+    text-align: flex;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    grid-area: title;
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.descripcion{
+    margin-top: 20px;
+    grid-area: subtitle;
+    font-weight: normal;
+    text-align: flex;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
 }
 .btn{
     font-family: 'Century Gothic', sans-serif;
@@ -22,16 +54,13 @@
     margin-left: 5px;
     transition: all 0.5s;
     cursor: pointer;
-    left: 37%;
+    left: 40%;
     margin-bottom: 20px;
     position: absolute;
-    margin-left: 35rem;
-    margin-top: 500px;
-    box-shadow: 30px 40px 15px 0px black;
-    
+    margin-top: 200px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.74);   
 }
-.imagen {
-    width: 1200px;
-    height: 625px;
-    border: solid 5px #121212;
-  }
+
+
+
+

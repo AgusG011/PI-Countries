@@ -7,6 +7,7 @@ import Cards from "../Cards/Cards";
 import Paginado from "../Paginado/Paginado";
 import Searchbar from "../Searchbar/Searchbar";
 import './Home.css'
+import images from '../../assets/img/uwu.svg';
 
 export default function Home(){
     const dispatch = useDispatch(); // para despachar las actions
@@ -68,10 +69,14 @@ export default function Home(){
     //visual
     return (
         <div>
-            <h1 className="titulo">Countrie App</h1>
-            <Link to= '/activities'>
-                <button  className="buttons-home">Crear Actividad</button> 
-            </Link>
+            <nav className="navis">
+                <img src={images} alt="logo" className="logis"/>
+                <Link to= '/activities'>
+                    <button  className="buttons-home">Crear Actividad</button> 
+                </Link>
+            </nav>
+            
+            
             <div>
                 <Searchbar/> 
                 <select onChange={e => handleSortName(e)} defaultValue={"default"} id='borrar'>
