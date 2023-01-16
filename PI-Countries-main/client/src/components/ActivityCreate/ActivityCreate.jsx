@@ -107,7 +107,7 @@ export default function ActivityCreate(){
 
     return(
         <div>
-            <div className="container-create">
+            <div className="container">
                 <Link to = '/home'><button className="boton-volver">Volver</button></Link>
                 <h1 className="titulo">Crea tu actividad!</h1>
                 <form className="form" onSubmit={e=>handleSubmit(e)}>
@@ -122,10 +122,11 @@ export default function ActivityCreate(){
                             <p className="warning">{errors.name}</p>
                         )}
                     </div>
+
                     <div>
                         <label>Dificultad:</label>
                         <select defaultValue={'default'} name="dificulty" onChange={e=> handleSelect(e)}>
-                            <option value="default" disabled>Dificultad</option>
+                            <option value="default" disabled>Dificultad </option>
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
