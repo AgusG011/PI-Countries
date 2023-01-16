@@ -21,11 +21,11 @@ export default function Searchbar(){
     return(
         <div>
             <input
-            className="search-input" 
+            className="search-inpu" 
             value={name}
             onChange={e=>handleInputChange(e)}
             type="text" 
-            placeholder="Buscar Pais"
+            placeholder=" Buscar Pais"
             />
             <button className="btn-home" type="submit" onClick={e=>handleSubmit(e)}>Buscar</button>
         </div>

@@ -22,6 +22,7 @@ export function getNameCountries(name){
         }
     }
 }
+
 export function postActivities(payload){
     return async function (dispatch){
         var response = await axios.post(`http://localhost:3001/activities`, payload)

@@ -12,7 +12,7 @@ export default function Detail(props){
     const [data, setData] = useState([])
     
     useEffect (()=>{
-        axios.get(`https://restcountries.com/v3/alpha/${id}`, {
+        axios.get(`http://localhost:3001/countries/${id}`, {
             method: 'GET'
         })
             .then(response => response.data)
@@ -25,17 +25,18 @@ export default function Detail(props){
             })
     },[id]);
     console.log(data)
-
+    // console.log(data);http://localhost:3001/activities
+    
     return(
         <div>
             {
                 data.length > 0 ?
                 <div className="container">
-                        <img className="imgd" src={data[0].flags[0]} alt="Bandera del Pais"/>
+                        <img className="imgd" src={data[0].flag} alt="Bandera del Pais"/>
                     <div className="card-detail">
                         
-                        <h1>Nombre: {data[0].name.common}</h1>
-                        <h2>Id: {data[0].cca3}</h2>
+                        <h1>Nombre: {data[0].name}</h1>
+                        <h2>Id: {data[0].id}</h2>
                         <h2>Capital: {data[0].capital}</h2>
                         <h2>Continente: {data[0].subregion}</h2>
                         <h2>Area: {data[0].area} km²</h2>
@@ -44,6 +45,7 @@ export default function Detail(props){
                             <button className="volver">Volver</button>
                         </Link>
                     </div>
+                    
                     {/* <div className="container-activities-cards">
                         {data[0].activities.length? <h1><b>Activities:</b></h1>:""}
                         {data[0].activities?.map(e=><div>

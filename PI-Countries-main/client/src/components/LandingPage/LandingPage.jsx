@@ -7,7 +7,7 @@ export default function LandingPage(){
     return(
         <div className='landing'>
             <div className="navs" >
-                <h1 className="titul"> Countrie App </h1> 
+                <h1 className="titul"> Countries </h1> 
                 <img src={image} alt="logo" className="image" />
             </div>
             
