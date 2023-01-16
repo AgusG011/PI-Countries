@@ -64,7 +64,7 @@ const getCountries = async (req, res) => {
         const { id } = req.params;
         let allCountries = await Country.findAll({include: {
             model: Activity,
-            attributes:["name", "dificulty", "duration", "season"],
+            attributes:["id","name", "dificulty", "duration", "season"],
             through: {
                 attributes: []
             }

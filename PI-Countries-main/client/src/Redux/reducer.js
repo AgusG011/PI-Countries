@@ -4,7 +4,7 @@ const initialState = {
     detail: []
 }
 
-export default function rootReducer(state=initialState, action){
+export default function rootReducer(state= initialState, action){
     switch(action.type){
         case "GET_COUNTRIES":
             return {
@@ -30,7 +30,8 @@ export default function rootReducer(state=initialState, action){
                 };
             case "FILTER_BY_ACTIVITY":
                 const allCountry = state.Countries
-                const activityFilter = action.payload === 'act' ? allCountry.filter(f=> f.activities.length!==0): action.payload === 'noA'? allCountry.filter(f=>!f.activities.length) : allCountry
+            
+                const activityFilter = action.payload === 'act' ? allCountry.filter(f=> f.Activities.length !==0): action.payload === 'noA'? allCountry.filter(f=>!f.Activities.length) : allCountry
                 return {
                     ...state,
                     Countries:activityFilter

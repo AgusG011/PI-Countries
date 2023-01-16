@@ -60,9 +60,7 @@ export default function ActivityCreate(){
         const index = Countries.findIndex(object => {
             return object.name === e.target.value
         })
-        if (index > -1){
-            Countries.splice(index, 1)
-        }
+        
         setInput({
             ...input,
             countriesName: [...input.countriesName, e.target.value]
@@ -107,10 +105,10 @@ export default function ActivityCreate(){
 
     return(
         <div>
-            <div className="container">
+            <div className="contain">
                 <Link to = '/home'><button className="boton-volver">Volver</button></Link>
                 <h1 className="titulo">Crea tu actividad!</h1>
-                <form className="form" onSubmit={e=>handleSubmit(e)}>
+                <form className="forms" onSubmit={e=>handleSubmit(e)}>
                     <div>
                         <label>Actividad:</label>
                         <input type="text"
@@ -165,8 +163,8 @@ export default function ActivityCreate(){
                     )}
                     </div>
                     <div>
-                        <select defaultValue={'default'} name="NombrePais" onChange={e=>handleCountrySelect(e)}>
-                            <option value="default" disabled>Selecciona el Pais</option>
+                        <select  onChange={e=>handleCountrySelect(e)}>
+                            <option >Selecciona el Pais</option>
                             {Countries.map(c=>(
                                 <option value={c.name}>{c.name}</option>
                             ))}
@@ -175,15 +173,15 @@ export default function ActivityCreate(){
                             <p className="warning">{errors.countriesName}</p>
                         )}
                     </div>
-                    <button className="boton" type="submit" disabled={!buttonEnabled}>Crear</button>
+                    <button className="boton" type="submit" >Crear</button>
                 </form>
-                {input.countriesName.map(c=>
+                {/* {input.countriesName.map(c=>
                     <div className="form">
                         <p>{c}
                         <button className="boton" onClick={()=>handleDelete(c)}>X</button> 
                         </p>
                     </div>
-                )}
+                )} */}
             </div>
         </div>
     )

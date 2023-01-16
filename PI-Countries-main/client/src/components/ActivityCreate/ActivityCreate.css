@@ -1,28 +1,21 @@
-.container{
-    border-radius: 10px;
-    background-color: aliceblue;
-    width: 500px;
-    height: 500px;
-    perspective: 1000px;
-    border: solid 1px #121212;
-    box-shadow: 30px 40px 15px 0px #121212;
-    margin-top: 100px;
-    margin-left: 450px;
+.contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .titulo {
     padding-top: 30px;
     margin: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3rem;
-    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.486);
-    color: rgb(0, 0, 0);
+    text-shadow: -2px 2px 2px black;
+    color: azure;
 }
-.form{  
+.form{
     width: 30vw;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 100px;
-    text-align: center;
+    font-size: 1.5rem;
+    color: azure;
 }
 .warning{
     color: azure;
@@ -31,16 +24,14 @@
     margin-top: 10px;
     margin-left: 50px;
     height: 2rem;
-    width: 100px;
+    width: 500px;
     font-size: 1rem;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.541);
+    box-shadow: -5px 5px 5px rgb(255, 0, 0);
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(0, 0, 0);
-    background-color: azure;
-    border-color: #000000;
+    color: rgb(255, 255, 255);
+    background-color: #000000;
     border-radius: 10px;
     cursor: pointer;
-    
 }
 .boton:hover{
     background-color: #ffffff;
@@ -51,7 +42,7 @@
     width: 100px;
     height: 2rem;
     font-size: 1rem;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.541);
+    box-shadow: -5px 5px 5px black;
     font-family: 'Times New Roman', Times, serif;
     background-color: azure;
     border-radius: 10px;

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getDetail } from "../../Redux/action";
+import { getDetail, ActivtyDelete } from "../../Redux/action";
 import { useEffect } from "react";
 import './Detail.css'
 import axios from "axios";
+
 
 export default function Detail(props){
     let { id } = useParams();
@@ -24,7 +25,7 @@ export default function Detail(props){
                 console.log("ERROR API", err)
             })
     },[id]);
-    console.log(data)
+    // console.log(data)
     // console.log(data);http://localhost:3001/activities
     
     return(
@@ -46,18 +47,21 @@ export default function Detail(props){
                         </Link>
                     </div>
                     
-                    {/* <div className="container-activities-cards">
-                        {data[0].activities.length? <h1><b>Activities:</b></h1>:""}
-                        {data[0].activities?.map(e=><div>
+                    <div className="container-activities-cards">
+                        {data[0].Activities.length? <h1><b>Activities:</b></h1>:""}
+                        {data[0].Activities?.map(e=><div>
+
                             <ul className="card-activities">
                                 <h2>Nombre: {e.name}</h2>
                                 <h2>Dificultad: {e.dificulty}</h2>
                                 <h2>Duracion: {e.duration}</h2>
                                 <h2>Temporada: {e.season}</h2>
+                                <button onClick = {()=>ActivtyDelete(e.id)}>Eliminar</button>
                             </ul>
                         </div>)}
-                    </div> */}
+                    </div>
                 </div> : <p>Cargando...</p>
+
             }
             
         </div>

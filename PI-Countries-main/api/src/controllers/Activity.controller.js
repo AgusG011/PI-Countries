@@ -4,6 +4,7 @@ const {Op} = require('sequelize');
 const postActivity = async(req, res, next) => {
     const { name, dificulty, duration, season, countriesName} = req.body
     try {
+        console.log(req.body)
         if(name&&dificulty&&duration&&season&&countriesName){
             const activity={
                 name,
@@ -26,7 +27,17 @@ const postActivity = async(req, res, next) => {
         next(error)
     }
 }
+const ActivtyDelete = async (req, res, next)=> {
+    
+    const {ActivityId} = req.query
+    console.log(ActivityId)
+    let activityDelete = await Activity.findByPk(ActivityId)
+    activityDelete ? await activityDelete.destroy(ActivityId) : res.status(404).json({msg: "No existe ese ID"})
+    res.json({msg: "Se borro Correctamente"})
+}
+
 
 module.exports = {
-    postActivity
+    postActivity,
+    ActivtyDelete
 }

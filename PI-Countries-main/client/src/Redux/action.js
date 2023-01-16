@@ -24,10 +24,12 @@ export function getNameCountries(name){
 }
 
 export function postActivities(payload){
+    // console.log(payload)
     return async function (dispatch){
         var response = await axios.post(`http://localhost:3001/activities`, payload)
         return response
     }
+
 }
 export function getDetail(id){
     return async function(dispatch){
@@ -71,4 +73,14 @@ export function OrderByPopulation2(payload) {
         type:  "ORDER_BY_POPULATION2",
         payload,
     };
+}
+export async function ActivtyDelete(id){
+    console.log(id)
+        try{
+            var aux = await axios.delete(`http://localhost:3001/activities?ActivityId=${id}`)
+            // console.log('hola')
+        } catch(error) {
+            console.log(error)
+        }
+    
 }

@@ -16,7 +16,7 @@ export default function Home(){
     //variables del paginado
     const [CurrentPage, setCurrentPage]  = useState(1); //pagina actial que empieza en 1
     const [CountriesPerPage, setCountriesperPage] = useState(10)//paises por pagina
-    const IndexOfLastCountrie = CurrentPage === 1 ? 9 : CurrentPage * CountriesPerPage-1; //currentpage era siempre 10, entonces lo cambie por 10, lo mismo abajo
+    const IndexOfLastCountrie = CurrentPage === 1 ? 9 : CurrentPage * CountriesPerPage-1; //currentpage era siempre 10, entonces lo cambie por 9, lo mismo abajo
     const IndexOfFirstCountrie = CurrentPage === 1 ? 0 : IndexOfLastCountrie - CountriesPerPage;
     const CurrentCountries= allCountries.slice(IndexOfFirstCountrie, IndexOfLastCountrie)
 

@@ -1,7 +1,8 @@
 const { Router } = require('express');
-const { postActivity } = require('../controllers/Activity.controller');
+const { postActivity, ActivtyDelete } = require('../controllers/Activity.controller');
 const router = Router();
 
+router.delete('/', ActivtyDelete)
 router.post('/', postActivity)
 
 module.exports = router
