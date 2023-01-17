@@ -9,26 +9,34 @@
     position: relative;
     
 } 
+
 .imgd{
+    border-radius: 50%;
     margin: 10px;
-    height: 200px;
+    height: 300px;
     width: 300px;
+
 }
+
 .card-detail{
-    width: 900px;
+    padding-top: 80px;
+    margin-top: 20px;
+    display: flex;
+    width: 800px;
     height: 500px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 17px;
-    background-color: #cfa48f81;
+    background-color: aliceblue;
     border-radius: 5%;
     border: 2.5px black solid;
 }
+
 .linkd{
-    position: absolute;
-    right: 100px;
-    bottom: 20px;
-    
+    position: start;
+    margin-left: 30px;
+    margin-top: -40px;
 }
+
 .volver{
    
     font-family: 'Century Gothic', sans-serif;
@@ -39,21 +47,33 @@
     text-align: center;
         
 }
-/* .container-activities-cards{
-    width: 300px;
+
+ .containeractivities-cards{
+    width: 800px;
     height: 400px;
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 5%;
     border: solid black 2.5px;
-    background-color: #cfa48f81;
+    background-color: aliceblue;
+    margin-top: 20px;
+    list-style:none;
+    margin-right: 40px;
 }
-.card-activities{
-    display: grid;
-    height: 100px;
-    flex-direction: column;
-    padding-left: 0px;
-} */
+
+li h2{
+    line-height: 50px;
+}
+
+.elm{
+    font-family: 'Century Gothic', sans-serif;
+    border-radius: 4px;   
+    background-color: #1a1a1a;
+    border: solid 10px #121212;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+} 
 
 
 
