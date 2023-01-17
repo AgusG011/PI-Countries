@@ -17,8 +17,8 @@
     width: 400px;
     height: 400px;
     perspective: 1000px;
-    border: solid 1px #121212;
-    box-shadow: 30px 40px 15px 0px #121212;
+    /* border: solid 1px #121212; */
+    box-shadow: 10px 20px 5px 0px #1212127e;
     text-align: center;
     
   }

@@ -85,7 +85,7 @@ export default function Home(){
             
             <div>
             
-                
+                <div className="botonera">
                 <select onChange={e => handleSortName(e)} defaultValue={"default"} id='borrar'>
                     <option value="default" disabled>Ordenado Alfabetico</option>
                     <option value="asc"> A-Z </option>
@@ -115,7 +115,7 @@ export default function Home(){
                 Paises con poblacion mayor a 10.000.000
                 </button>
                 <button onClick={e=> {handleClick(e)}}> Limpiar filtros</button>
-               
+                </div>
 
                 <Paginado CountriesPerPage = {CountriesPerPage} allCountries = {allCountries.length} paginado = {paginado} />
 

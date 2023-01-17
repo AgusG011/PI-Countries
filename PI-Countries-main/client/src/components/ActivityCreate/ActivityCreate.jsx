@@ -104,27 +104,31 @@ export default function ActivityCreate(){
     }
 
     return(
-        <div>
+        <div className="padre">
             <div className="contain">
                 <Link to = '/home'><button className="boton-volver">Volver</button></Link>
                 <h1 className="titulo">Crea tu actividad!</h1>
                 <form className="forms" onSubmit={e=>handleSubmit(e)}>
                     <div>
                         <label>Actividad:</label>
+                        <br />
                         <input type="text"
                         value={input.name}
                         name= "name"
                         onChange={handleChange}
                         />
+                        <div >
                         {errors.name&&(
                             <p className="warning">{errors.name}</p>
                         )}
+                        </div>
                     </div>
 
                     <div>
                         <label>Dificultad:</label>
                         <select defaultValue={'default'} name="dificulty" onChange={e=> handleSelect(e)}>
                             <option value="default" disabled>Dificultad </option>
+                            <br />
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -139,6 +143,7 @@ export default function ActivityCreate(){
                     </div>
                     <div>
                         <label>Duracion:</label>
+                        <br />
                         <input type="number"
                         name="duration"
                         value={input.duration}
@@ -152,6 +157,7 @@ export default function ActivityCreate(){
                         <label>Temporada:</label>
                         <select defaultValue={'default'} name="season" onChange={e=>handleSelect(e)}>
                             <option value="default" disabled>Temporada</option>
+                            <br />
                             <option value="summer">Verano</option>
                             <option value="winter">Invierno</option>
                             <option value="autumn">Otoño</option>
