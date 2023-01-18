@@ -2,7 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser'); // se remplaza por express
 const morgan = require('morgan');
-const routes = require('./routes/index.js');
+const routes = require('./routes/index.js'); //se trae todas las rutas desde rutes
 
 require('./db.js');  //requiere todo de la base de datos para hacer la conexion con postgres 
 
