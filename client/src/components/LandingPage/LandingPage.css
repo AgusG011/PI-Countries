@@ -42,25 +42,47 @@
     font-size: 1.1rem;
     font-family: 'Poppins', sans-serif;
 }
-.btn{
-    height: 100px;
-    font-family: 'Century Gothic', sans-serif;
-    border-radius: 4px;
-    background-color: #1a1a1a;
-    border: solid 10px #121212;
-    color: #fff;
-    text-align: center;
-    font-size: 300%;
-    padding: 20px;
-    /* margin-left: 5px; */
-    transition: all 0.5s;
+.btn button {
+    color: black;
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 120px;
+    text-transform: uppercase;
     cursor: pointer;
-    left: 40%;
-    /* margin-bottom: 20px; */
-    /* position: absolute; */
-    margin-top: 200px;
-    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.74);   
-}
+    transform: skew(-21deg);
+  }
+  
+ .btn span {
+    display: inline-block;
+    transform: skew(21deg);
+  }
+  
+ .btn button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+  }
+  
+ .btn button:hover {
+    color: #fff;
+  }
+  
+ .btn  button:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
 
 
 

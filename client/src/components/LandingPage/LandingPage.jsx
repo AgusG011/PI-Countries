@@ -13,8 +13,10 @@ export default function LandingPage(){
             
             <h2 className="subtitulo">Descubre todos los países del mundo y las actividades en las que puedes aventurarte</h2>
             <h4 className="descripcion">Countrie App es una aplicación destinada a mostrarte información de diferentes partes del mundo</h4>
-            <Link to ='/home'><button className='btn'> Ver mas </button></Link>
-       
+            <div className="btn">
+                <Link to ='/home'><button><span>Ver mas</span></button></Link>
+            </div>
+            
         </div>
 
     )}
