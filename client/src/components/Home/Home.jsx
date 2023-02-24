@@ -68,7 +68,7 @@ export default function Home(){
     }
     //visual
     return (
-        <div>
+        <div className="dad">
             <nav className="navis">
         
                 <img src={images} alt="logo" className="logis"/>
@@ -86,40 +86,40 @@ export default function Home(){
             <div>
             
                 <div className="botonera">
-                <select onChange={e => handleSortName(e)} defaultValue={"default"} id='borrar'>
-                    <option value="default" disabled>Ordenado Alfabetico</option>
-                    <option value="asc"> A-Z </option>
-                    <option value="des"> Z-A </option>
-                </select>
-                <select defaultValue={"default"} onChange={e => handleSortPopulation(e)} id='borrar1'>
-                    <option value="default" disabled>Ordenado por poblacion</option>
-                    <option value="des"> Mayor Poblacion</option>
-                    <option value="asc"> Menor Poblacion</option>
-                </select>
-                <select onChange={e=> handleFilterByActivities(e)} id='borrar2'> 
-                    <option value="all">Actividades</option>
-                    <option value="act">Con Actividades</option>
-                    <option value="noA">Sin Actividades</option>
-                </select>
-                <select onChange={e=> handleFilterContinents(e)} id='borrar3'>
-                    <option value="All">Continent</option>
-                    <option value="Africa">Africa</option>
-                    <option value="Antarctica">Antarctica</option>
-                    <option value="Asia">Asia</option>
-                    <option value="Europe">Europe</option>
-                    <option value="North America">North America</option>
-                    <option value="South America">South America</option>
-                    <option value="Oceania">Oceania</option>
-                </select>
-                <button onClick={e=> {handleFilterPopulation2(e)}}>
-                Paises con poblacion mayor a 10.000.000
-                </button>
-                <button onClick={e=> {handleClick(e)}}> Limpiar filtros</button>
+                    <select onChange={e => handleSortName(e)} defaultValue={"default"} id='borrar'>
+                        <option value="default" disabled>Order</option>
+                        <option value="asc"> A-Z </option>
+                        <option value="des"> Z-A </option>
+                    </select>
+                    <select defaultValue={"default"} onChange={e => handleSortPopulation(e)} id='borrar1'>
+                        <option value="default" disabled>Poblation</option>
+                        <option value="des"> Max poblation</option>
+                        <option value="asc"> Min poblation</option>
+                    </select>
+                    <select onChange={e=> handleFilterByActivities(e)} id='borrar2'> 
+                        <option value="all">Activities</option>
+                        <option value="act"></option>
+                        <option value="noA">None</option>
+                    </select>
+                    <select onChange={e=> handleFilterContinents(e)} id='borrar3'>
+                        <option value="All">Continent</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Antarctica">Antarctica</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Europe">Europe</option>
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                    <button onClick={e=> {handleFilterPopulation2(e)}}>
+                        Poblation more than 10M
+                    </button>
+                    <button onClick={e=> {handleClick(e)}}> Clean</button>
                 </div>
 
                 <Paginado CountriesPerPage = {CountriesPerPage} allCountries = {allCountries.length} paginado = {paginado} />
 
-                <div>
+                <div className="dad-card">
                     {CurrentCountries?.map((el)=> {
                         return (
                             <Link className="link" to={`/info/${el.id}`}>

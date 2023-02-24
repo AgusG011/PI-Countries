@@ -1,5 +1,14 @@
+.dad{
+    background-color: #9ed1b7;
+    
+}
+.dad-card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .navis{
-    background-image: url('https://www.dailyfreepsd.com/wp-content/uploads/2013/07/Free-Dotted-World-Map-PSD.jpg');
+    background-color: #78a890;
     object-position: bottom;
     display: flex;
     justify-content: space-between;
@@ -22,18 +31,58 @@
     margin-right: 30px;
     box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.856);   
 }
-.botonera select, button{
-    margin: 10px 5px ;
-    margin-top: 10px;
-    height: 2rem;
-    font-size: 1rem;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.493);
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(0, 0, 0);
-    border-radius: 4px;
+
+.botonera button {
+    width: fit-content;
+    min-width: 10px;
+    height: 30px;
+    margin: 2px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
     cursor: pointer;
-    color: rgb(255, 233, 233);
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
 }
+  
+.botonera button:hover {
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 20px -18px;
+}
+  
+.botonera button:active {
+    transform: scale(0.95);
+}
+
+
+
+.botonera select{
+    width: fit-content;
+    min-width: 10px;
+    height: 30px;
+    margin: 2px;
+    border-radius: 5px;
+    border: 2.5px solid #E0E1E4;
+    box-shadow: 0px 0px 20px -20px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out 0ms;
+    user-select: none;
+    font-family: 'Poppins', sans-serif;
+}
+  
+.botonera select:hover {
+    background-color: #F2F2F2;
+    box-shadow: 0px 0px 20px -18px;
+}
+  
+.botonera select:active {
+    transform: scale(0.95);
+}
+
+
 
 .link{
  color: aliceblue;
