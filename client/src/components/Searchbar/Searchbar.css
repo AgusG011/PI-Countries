@@ -6,6 +6,7 @@
   }
   
   .search__input {
+    
     font-family: inherit;
     font-size: inherit;
     background-color: #f4f2f2;
@@ -13,7 +14,7 @@
     color: #646464;
     padding: 0.7rem 1rem;
     border-radius: 30px;
-    width: 12em;
+    width: 300px;
     transition: all ease-in-out .5s;
     margin-right: -2rem;
   }

@@ -70,15 +70,21 @@ export default function Home(){
     return (
         <div className="dad">
             <nav className="navis">
-        
-                <img src={images} alt="logo" className="logis"/>
-
+                <div className="dad-nav">
+                    <img src={images} alt="logo" className="logis"/>
+                    <h2 className="letras">Countries</h2>
+                </div>
+                
                 <Searchbar/> 
-
-                <Link to= '/activities'>
-                    <button  className="buttons-home">Crear Actividad</button> 
-                </Link>
-
+                <div className="dad-act">
+                    <Link to= '/activities'>
+                        <button> Create 
+                            <div class="arrow-wrapper">
+                                <div class="arrow"></div>
+                            </div>
+                        </button>
+                    </Link>
+                </div>
 
             </nav>
             
