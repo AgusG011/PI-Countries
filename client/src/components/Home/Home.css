@@ -6,8 +6,11 @@
     
 }
 .dad-card{
+    padding-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
+    gap: 200px;
+    justify-content: center;
 }
 
 .navis{
@@ -146,9 +149,3 @@
     transform: scale(0.95);
 }
 
-
-
-.link{
- color: aliceblue;
-
-}
