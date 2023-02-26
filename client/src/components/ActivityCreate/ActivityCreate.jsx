@@ -105,12 +105,11 @@ export default function ActivityCreate(){
 
     return(
         <div className="padre">
-            <div className="contain">
-                <Link to = '/home'><button className="boton-volver">Volver</button></Link>
-                <h1 className="titulo">Crea tu actividad!</h1>
-                <form className="forms" onSubmit={e=>handleSubmit(e)}>
+            <div class="card">
+                <span class="card__title">Create your activitie</span>
+                    <div class="card__form">
                     <div>
-                        <label>Actividad:</label>
+                        <label>Name:</label>
                         <br />
                         <input type="text"
                         value={input.name}
@@ -121,14 +120,13 @@ export default function ActivityCreate(){
                         {errors.name&&(
                             <p className="warning">{errors.name}</p>
                         )}
-                        </div>
                     </div>
-
+                
                     <div>
                         <label>Dificultad:</label>
                         <select defaultValue={'default'} name="dificulty" onChange={e=> handleSelect(e)}>
                             <option value="default" disabled>Dificultad </option>
-                            <br />
+                            
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -141,6 +139,7 @@ export default function ActivityCreate(){
                             <p className="warning">{errors.dificulty}</p>
                         )}
                     </div>
+
                     <div>
                         <label>Duracion:</label>
                         <br />
@@ -178,17 +177,11 @@ export default function ActivityCreate(){
                         {errors.countriesName&&(
                             <p className="warning">{errors.countriesName}</p>
                         )}
+                            </div>
+                            <br/><br/>
+                        <button class="sign-up"type="submit" >Create</button>
                     </div>
-                    <button className="boton" type="submit" >Crear</button>
-                </form>
-                {/* {input.countriesName.map(c=>
-                    <div className="form">
-                        <p>{c}
-                        <button className="boton" onClick={()=>handleDelete(c)}>X</button> 
-                        </p>
-                    </div>
-                )} */}
+                </div>
             </div>
-        </div>
-    )
-}
+        </div>  
+  )   }

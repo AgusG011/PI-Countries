@@ -37,13 +37,13 @@ export default function Detail(props){
 
 
     return(
-        <div>
+        <div className="dad-detail">
             {
                 data.length > 0 ?
                 <div className="container">
                        
                     <div className="card-detail">
-                         <img className="imgd" src={data[0].flag} alt="Bandera del Pais"/>
+                        <img className="imgd" src={data[0].flag} alt="Bandera del Pais"/>
 
                         <div>
                         <h1>Nombre: {data[0].name}</h1>
@@ -54,14 +54,14 @@ export default function Detail(props){
                         <h2>Poblacion: {data[0].population}</h2>
                         </div>
 
-                        <Link className="linkd" to= '/home'>
+                        <Link to= '/home'>
                             <button className="volver">Volver</button>
                         </Link>
                     </div>
                     
-                    <div>
-                        {data[0].Activities.length? <h1><b>Actividades:</b></h1>:""}
-                        <ul>
+                    <div >
+                        {data[0].Activities.length? <h1 className="acti"><b>Actividades:</b></h1>:""}
+                        <ul >
                             {data[0].Activities?.map(e=>
 
                             <li className="containeractivities-cards">

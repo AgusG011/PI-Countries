@@ -1,3 +1,7 @@
+.dad-detail{
+    background-image: url("../Detail/DALL·E\ 2023-02-26\ 17.34.50\ -\ infinity\ image\ \ of\ travel\ psicodelico\ color\ coffe.png");
+    padding-bottom: 60px;
+}
 .container{
     display:flex;
     flex-wrap: wrap;
@@ -11,34 +15,27 @@
 } 
 
 .imgd{
-    border-radius: 50%;
+    
     margin: 10px;
-    height: 300px;
+    height: 200px;
     width: 300px;
 
 }
 
 .card-detail{
-    padding-top: 80px;
+    
     margin-top: 20px;
-    display: flex;
-    width: 800px;
-    height: 500px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-    background-color: aliceblue;
-    border-radius: 5%;
+    width: 500px;
+    height: 700px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f1edd0;
     border: 2.5px black solid;
 }
 
-.linkd{
-    position: start;
-    margin-left: 30px;
-    margin-top: -40px;
-}
+
 
 .volver{
-   
+    
     font-family: 'Century Gothic', sans-serif;
     border-radius: 4px;   
     background-color: #1a1a1a;
@@ -47,15 +44,18 @@
     text-align: center;
         
 }
+.acti{
+    color: #478aa5;
+    
+}
 
  .containeractivities-cards{
-    width: 800px;
+    width: 500px;
     height: 400px;
     font-size: 17px;
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: solid black 2.5px;
-    background-color: aliceblue;
+    background-color: #f1edd0;
     margin-top: 20px;
     list-style:none;
     margin-right: 40px;

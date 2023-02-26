@@ -1,70 +1,70 @@
 .padre{
+    padding-top: 30px;
+    background-color: antiquewhite;
     display: flex;
     justify-content: center;
-    align-content: center;
-    margin-top: 20px;
+    height: 100vh;
+      
 }
 
-.contain{
+.card {
+    
+    width: 500px;
+    height: 700px;
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    border-radius: 20px;
+  }
+  
+  .card > * {
+    margin: 0;
+  }
+  
+  .card__title {
+    font-size: 23px;
+    font-weight: 900;
+    color: #333;
+  }
+  
+  .card__content {
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+  }
+  
+  .card__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: aliceblue;
-    width: 600px;
-    height: 700px;
-    border-radius: 20px;
-    border: 2px solid black;
-
-}
-.titulo {
-    padding-top: 30px;
-    margin: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 3rem;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.377);
-    color: rgb(0, 0, 0);
-}
-.form{
-    width: 30vw;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5rem;
-    color: azure;
-}
-
-.warning{
-    color: rgb(255, 0, 0);
-}
-.boton{
+    gap: 10px;
+  }
+  
+  .card__form input {
     margin-top: 10px;
-    margin-left: 50px;
-    height: 2rem;
-    width: 500px;
-    font-size: 1rem;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.493);
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.boton:hover{
-    background-color: #ffffff;
+    outline: 0;
+    background: rgb(255, 255, 255);
+    box-shadow: transparent 0px 0px 0px 1px inset;
+    padding: 0.6em;
+    border-radius: 14px;
+    border: 1px solid #333;
     color: black;
-}
-.boton-volver{
-    margin-top: 10px;
-    width: 100px;
-    height: 2rem;
-    font-size: 1rem;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.493);
-    font-family: 'Times New Roman', Times, serif;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    cursor: pointer;
-    color: rgb(255, 233, 233);
-}
-
-.boton-volver:hover{
-    background-color: #000000;
-    color: rgb(255, 255, 255);
-}
+  }
+  
+  .card__form button {
+    border: 0;
+    background: #111;
+    color: #fff;
+    padding: 0.68em;
+    border-radius: 14px;
+    font-weight: bold;
+  }
+  
+  .sign-up:hover {
+    opacity: 0.8;
+  } 
+  

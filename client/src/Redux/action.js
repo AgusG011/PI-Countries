@@ -82,5 +82,5 @@ export async function ActivtyDelete(id){
         } catch(error) {
             console.log(error)
         }
-    
+        window.location.reload()
 }

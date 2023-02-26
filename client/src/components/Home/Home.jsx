@@ -104,8 +104,8 @@ export default function Home(){
                     </select>
                     <select onChange={e=> handleFilterByActivities(e)} id='borrar2'> 
                         <option value="all">Activities</option>
-                        <option value="act"></option>
-                        <option value="noA">None</option>
+                        <option value="act">with</option>
+                        <option value="noA">without</option>
                     </select>
                     <select onChange={e=> handleFilterContinents(e)} id='borrar3'>
                         <option value="All">Continent</option>
