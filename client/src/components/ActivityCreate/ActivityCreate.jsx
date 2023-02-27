@@ -124,9 +124,9 @@ export default function ActivityCreate(){
                         name= "name"
                         onChange={handleChange}
                         />
-                        <div >
+                        <div className="err-act">
                         {errors.name&&(
-                            <p className="warning">{errors.name}</p>
+                            <span className="warning">{errors.name}</span>
                         )}
                     </div>
                 
@@ -142,9 +142,9 @@ export default function ActivityCreate(){
                             <option value="5">5</option>
                         </select>
                     </div>
-                    <div>
+                    <div className="err-act">
                         {errors.dificulty&&(
-                            <p className="warning">{errors.dificulty}</p>
+                            <span className="warning">{errors.dificulty}</span>
                         )}
                     </div>
 
@@ -156,9 +156,11 @@ export default function ActivityCreate(){
                         value={input.duration}
                         onChange={handleChange}
                         />
+                        <div className="err-act">
                         {errors.duration &&(
-                            <p className="warning">{errors.duration}</p>
+                            <span className="warning">{errors.duration}</span>
                         )}
+                        </div>
                     </div>
                     <div>
                         <label>Temporada:</label>
@@ -171,8 +173,9 @@ export default function ActivityCreate(){
                             <option value="spring">Primavera</option>
                         </select>
                     </div>
-                    <div>{errors.season&&(
-                        <p className="warning">{errors.season}</p>
+                    <div className="err-act">
+                        {errors.season&&(
+                        <span className="warning">{errors.season}</span>
                     )}
                     </div>
                     <div>
@@ -182,12 +185,15 @@ export default function ActivityCreate(){
                                 <option value={c.name}>{c.name}</option>
                             ))}
                         </select>
-                        {errors.countriesName&&(
-                            <p className="warning">{errors.countriesName}</p>
-                        )}
+                        <div className="err-act">
+                            {errors.countriesName&&(
+                                <p className="warning">{errors.countriesName}</p>
+                            )}
+                        </div>
+                        
                             </div>
-                            <br/><br/>
-                        <button onClick={handleSubmit} class="sign-up"type="submit" >Create</button>
+                            
+                        <button onClick={handleSubmit} class="sign-up"type="submit" >+ Create</button>
                     </div>
                 </div>
             </div>

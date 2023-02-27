@@ -11,9 +11,12 @@
   top: 30px;
   left: 30px;
 }
-
+.err-act{
+  height: 50px;
+  color: red;
+}
 .card-create {
-  position: relative;
+    position: relative;
     transition: all .2s;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
     width: 500px;
