@@ -1,5 +1,5 @@
 .dad-detail{
-    background-image: url("../Detail/DALL·E\ 2023-02-26\ 17.34.50\ -\ infinity\ image\ \ of\ travel\ psicodelico\ color\ coffe.png");
+    background-color: #b7c27e;
     padding-bottom: 60px;
 }
 .container{
@@ -15,23 +15,28 @@
 } 
 
 .imgd{
-    
+    border: 5px solid rgba(202, 199, 199, 0.685);
     margin: 10px;
     height: 200px;
-    width: 300px;
-
+    width: 200px;
+    border-radius: 120px;
 }
 
 .card-detail{
-    
+    position: relative;
+    color:#65727a;
     margin-top: 20px;
     width: 500px;
     height: 700px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #f1edd0;
-    border: 2.5px black solid;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 255, .2);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    transition: all .2s;
 }
-
+.card-detail:hover {
+    box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
+  }
 
 
 .volver{
@@ -45,7 +50,7 @@
         
 }
 .acti{
-    color: #478aa5;
+    color: black;
     
 }
 
@@ -59,21 +64,87 @@
     margin-top: 20px;
     list-style:none;
     margin-right: 40px;
+    transition: all .2s;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+.containeractivities-cards:hover {
+    box-shadow: -12px 12px 2px -1px rgba(0, 0, 255, .2);
+  }
+
+.back-detail {
+    
+    position: absolute;
+    top: 30px;
+    left: 30px;
+      
 }
 
 li h2{
     line-height: 50px;
 }
 
-.elm{
-    font-family: 'Century Gothic', sans-serif;
-    border-radius: 4px;   
-    background-color: #1a1a1a;
-    border: solid 10px #121212;
-    color: #fff;
-    width: 100px;
+.elm button {
+
+    margin-left: 180px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+   }
+   
+  .elm button, button span {
+    transition: 200ms;
+   }
+   
+  .elm button .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+   }
+   
+   .elm button .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
     height: 40px;
-} 
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .elm  button svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   .elm button:hover {
+    background: #ff3636;
+   }
+   
+   .elm button:hover .text {
+    color: transparent;
+   }
+   
+   .elm button:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+   }
+   
+   .elm button:focus {
+    outline: none;
+   }
+   
+   .elm button:active .icon svg {
+    transform: scale(0.8);
+   }
 
 
 
