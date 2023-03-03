@@ -8,6 +8,7 @@ import Paginado from "../Paginado/Paginado";
 import Searchbar from "../Searchbar/Searchbar";
 import './Home.css'
 import images from '../../assets/img/uwu.svg';
+import menu from '../../assets/img/menu.svg';
 
 export default function Home(){
     const dispatch = useDispatch(); // para despachar las actions
@@ -26,6 +27,7 @@ export default function Home(){
 
     const [order, setOrder] = useState("");
     const [orderP, setOrderPopulation] = useState("");
+    const [menuOpen, setMenuOpen] = useState(false);
 
     // trae del estado los countries cuando el componente se monta
     useEffect(()=>{
@@ -69,6 +71,7 @@ export default function Home(){
     //visual
     return (
         <div className="dad">
+
             <nav className="navis">
                 <div className="dad-nav">
                     <img src={images} alt="logo" className="logis"/>
@@ -76,22 +79,18 @@ export default function Home(){
                 </div>
                 
                 <Searchbar/> 
-                <div className="dad-act">
-                    <Link to= '/activities'>
-                        <button> Create 
-                            <div class="arrow-wrapper">
-                                <div class="arrow"></div>
-                            </div>
-                        </button>
-                    </Link>
-                </div>
+                
 
-            </nav>
-            
-            
-            <div>
-            
-                <div className="botonera">
+                <div className="containerMenu">
+                <label for="burger" class="burger">
+                    <input id="burger" type="checkbox"onClick={() => setMenuOpen(!menuOpen)}/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                {menuOpen && (
+                    <div className="containerMenuContent">
+                    <div className="botonera">
                     <select onChange={e => handleSortName(e)} defaultValue={"default"} id='borrar'>
                         <option value="default" disabled>Order</option>
                         <option value="asc"> A-Z </option>
@@ -122,8 +121,25 @@ export default function Home(){
                     </button>
                     <button onClick={e=> {handleClick(e)}}> Clean</button>
                 </div>
-
+                    </div>
+                )}
+                </div>
+            </nav>
+            
+            
+            <div>
+                    
                 <Paginado CountriesPerPage = {CountriesPerPage} allCountries = {allCountries.length} paginado = {paginado} />
+
+                <div className="dad-act">
+                    <Link to= '/activities'>
+                        <button> Create 
+                            <div class="arrow-wrapper">
+                                <div class="arrow"></div>
+                            </div>
+                        </button>
+                    </Link>
+                </div>
 
                 <div className="dad-card">
                     {CurrentCountries?.map((el)=> {
